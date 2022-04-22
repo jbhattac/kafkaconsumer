@@ -16,11 +16,13 @@
 	<description>Simple Kafka consumer</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<com.boku.application.financereportmanager.version>1.2.3</com.boku.application.financereportmanager.version>
+		<com.amazonaws.aws-java-sdk-core.version>1.11.1001</com.amazonaws.aws-java-sdk-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -44,6 +46,17 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-core</artifactId>
+			<version>${com.amazonaws.aws-java-sdk-core.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.boku.application.financereportmanager</groupId>
+			<artifactId>financereportmanager-storage</artifactId>
+			<version>${com.boku.application.financereportmanager.version}</version>
 		</dependency>
 	</dependencies>
 
